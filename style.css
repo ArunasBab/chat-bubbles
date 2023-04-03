@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+section {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.kalba {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.kalba1 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+div {
+    position: relative;
+}
+
+.zinute {
+    width: 350px;
+    background: #dddddd;
+    border-radius: 10px 10px 10px 0px;
+    padding: 20px;
+}
+
+.zinute::before {
+    content: "";
+    border: 8px solid #dddddd; 
+    transform: rotatez(45deg);
+    position: absolute;
+    left: -8px;
+    top: 45%;
+}
+
+.zinute1 {
+    width: 350px;
+    background: #3bc06f;
+    border-radius: 10px 10px 0px 10px;
+    padding: 20px;
+}
+
+.zinute1::after {
+    content: "";
+    border: 8px solid #3bc06f; 
+    transform: rotatez(45deg);
+    position: absolute;
+    left: 97.7%;
+    top: 45%;
+}
